@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<SplitPane dividerPositions="0.6666" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chess2.MenuController">
+   <items>
+      <Pane fx:id="background" minHeight="200.0" minWidth="400.0" prefHeight="200.0" prefWidth="400.0" style="-fx-background-image: url(&quot;C:\Users\josep\Desktop\---\src\chess2\images\start.png&quot;);">
+         <children>
+            <Button fx:id="startBtn" layoutX="58.0" layoutY="139.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="140.0" text="Start!">
+               <font>
+                  <Font name="Source Code Pro" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="joinBtn" layoutX="198.0" layoutY="139.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="140.0" text="Join!">
+               <font>
+                  <Font name="Source Code Pro" size="12.0" />
+               </font>
+            </Button>
+            <TextField fx:id="ipField" layoutX="198.0" layoutY="199.0" prefHeight="30.0" prefWidth="140.0" promptText="Enter IP:">
+               <font>
+                  <Font name="Source Code Pro" size="12.0" />
+               </font>
+            </TextField>
+            <MenuButton fx:id="gameSelect" layoutX="58.0" layoutY="199.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="140.0" text="Select Game">
+               <font>
+                  <Font name="Source Code Pro" size="12.0" />
+               </font>
+            </MenuButton>
+            <TextField fx:id="nameField" layoutX="116.0" layoutY="-1.0" prefHeight="30.0" prefWidth="280.0" promptText="Enter Name">
+               <font>
+                  <Font name="Source Code Pro" size="12.0" />
+               </font>
+            </TextField>
+         </children>
+      </Pane>
+      <VBox minHeight="200.0" minWidth="200.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: darkgrey;" SplitPane.resizableWithParent="false">
+         <children>
+            <Button fx:id="pediaBtn" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" text="Open Pieceopedia">
+               <font>
+                  <Font name="Source Code Pro" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="updateBtn" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" text="Check For Updates">
+               <font>
+                  <Font name="Source Code Pro" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="winLossBtn" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" text="Win / Loss Percentages">
+               <font>
+                  <Font name="Source Code Pro" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="creditsBtn" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" text="Credits">
+               <font>
+                  <Font name="Source Code Pro" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </items>
+</SplitPane>
